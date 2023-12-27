@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #para1{ */
+        /* height: 200px;
+           display: flex;
+           justify-content: center;
+           font-size: 40px;
+           color:black;
+            /* background-color: aqua; */
+        /* transition: 1s; */
+        /* } */
+
+        /* #circle{
+            height: 500px;
+            width: 500px;
+           
+            border-radius: 50%;
+            border: 2px solid black;
+         }
+         #flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+         }
+         #button{
+            padding: 10px 20px ;
+            margin-top: 20px;
+            display: block;
+         } */
+    </style>
+</head>
+
+<body>
+    <!-- .......................................................................... -->
+    <!-- <div id="flex">
+        <div id="circle">
+     </div>
+      <button id="button">Click Me!</button> 
+    </div> -->
+    <!-- ................................................................ -->
+    <!-- <div id="para1">
+        <a id="anchor"></a> 
+    </div> -->
+    <!-- <div> 
+         <ul id="ulist"> 
+             <li class="list">data1</li>
+            <li class="list">data2</li>
+            <li class="list">data3</li>
+            <li class="list">data4</li>
+         </ul> -->
+
+    <script>
+        //  ......................color change on click......................................
+        //     let parent = document.getElementById("flex");
+        //     let circle = document.getElementById("circle");
+        //     let btn = document.getElementById("button");
+        //     let mark = 0;
+        //     btn.addEventListener("click", function(){
+        //         if(mark == 0){
+        //             circle.style.backgroundColor = "red";
+        //             console.log("red");
+        //             mark = 1;
+        //         }
+        //         else if(mark == 1){
+        //             circle.style.backgroundColor = "blue";
+        //             console.log("blue");
+        //             mark=2;
+        //         }
+        //         else if(mark==2){
+        //             circle.style.backgroundColor = "yellow";
+        //             console.log("yellow");
+        //              mark=3;
+        //         }
+        //         else if(mark==3){
+        //             circle.style.backgroundColor = "white";
+        //             console.log("white");
+        //              mark=0;
+        //         }
+
+        //     })
+
+
+
+
+
+
+        //   setTimeout(function(){
+        //  let para=document.getElementsByClassName("circle");
+        // //  para.setAttribute("style","background-color:red;")
+        // addattribute.style.backgroundcolor="black";
+        //   },1*1000)
+
+        // ..............enter link...........................
+
+        //         setTimeout(function(){
+
+
+        //         let para=document.getElementById("para1");
+        //         addattribute.style.background="black";
+        //         addattribute.style.color="red";
+        //         addattribute.style.textDecoration="none"
+        //         },1*1000)
+
+        //         const userlink = prompt("Enter link");
+        //         const addattribute = document.getElementById("anchor");
+        //         addattribute.href = userlink;
+
+        // const linkname=prompt("Enter name");
+        // const addname=document.createTextNode(linkname);
+        // addattribute.appendChild(addname);
+
+        // ...........................enter ol and ul ......................................
+
+        // const listitems = document.getElementById("ulist");
+        // const userdata = prompt("Enter list no");
+
+        // const newul=document.createElement("ul");
+        // listitems.append(newul);
+        // for (i = 1; i <= userdata; i++) {
+        //     const ulitems = document.createElement("li");
+        //     newul.append(ulitems);
+        //     const textinlist = document.createTextNode("data");
+        //     ulitems.appendChild(textinlist);
+
+        // }
+
+        // const newol=document.createElement("ol");
+        // listitems.append(newol);
+        // for (i = 1; i <= userdata; i++) {
+        //     const olitems = document.createElement("li");
+        //     newol.append(olitems);
+        //     const textinlists = document.createTextNode("data");
+        //     olitems.appendChild(textinlists);
+
+        // }
+
+        //    ......................create li..........................
+        // const list=document.createElement("li");
+        // const li=document.createTextNode("data5");
+        // const ul=document.getElementById("ulist");
+        // ul.appendChild(li);
+
+        // ........................print position...........
+        // let name="bhawna";
+        // let mark=-1;
+        // for (let i=0;i<name.length;i++)
+        // {
+        // if(name[i]=="a"){
+        //    mark=i;
+        //    break;
+        // }
+        // }
+        // console.log(mark);
+        //          
+        // ...........................................
+        // let name="bhawna";
+        // let mark=-1;
+        // for (let i=0;i<name.length;i++)
+        // {
+        // if(name[i]=="a"){
+        //    mark=i;
+        //    // break;
+        // }
+        // }
+        // console.log(mark);
+        // ............................................
+        // let name="bhawna";
+        // let count=0;
+        // for(let x=0;x<name.length;x++)
+        // {
+        //    if(name[x]=="a"){
+        //       count=count+1;
+        //    }
+        // }
+        // console.log(count);
+        //  ................................find area by function....................................
+
+        // function area(l,b,h)
+        // {
+        //     console.log(l*b*h);
+        // }
+        // let l=parseInt(prompt("enter length"));
+        // let b=parseInt(prompt("enter breadth"));
+        // let h=parseInt(prompt("enter height"));
+        // area(l,b,h);
+        // ............................positive and negative...................................................
+
+        // function number(n)
+        // {
+        //     if(n>0){
+        //         console.log(1)
+        //     }
+        //     else{
+        //         console.log(-1)
+        //     }
+        // }
+        // let n=parseInt(prompt("enter number"));
+        // number(n);
+
+
+        // .............................prime by function..................................................
+        
+        
+        // function prime(n) {
+        //     isfound = 0;
+        //     for (let x = 2; x < n; x++) {
+        //         if (n % x == 0) {
+        //             isfound = 1;
+        //             break;
+        //         }
+        //         else {
+        //             isfound = 0;
+        //         }
+        //     }
+        //     if ( isfound==1){
+        //         console.log("non-prime")
+        //     }
+        //     else{
+        //         console.log("prime")
+        //     }
+        // }
+        // let n = parseInt(prompt("enter number"));
+        // prime(n)
+
+
+        // ................................decimal to binary............................
+        // let num = 13;
+        // let binary = "";
+        // while ( num > 1) {
+        //     let b = num % 2;
+        //     binary = binary + b;
+        //     num = Math.floor(num/2);
+        // }
+        // binary=binary+num;
+        // let c="";
+        // for(let x=binary.length-1;x>=0;x--)
+        //  {
+        //     c=c+binary[x];
+        //  }
+        // console.log(c);
+
+// .........................COUNTING OCCURENCE OF EACH ELEMENT....................
+
+
+// let a=[2,4,5,4,5,2,7,7,9,5,6];
+// let b=[];
+// let count;
+// for(let x=0;x<a.length;x++)
+// {
+//     count = 1;
+//     if( b.indexOf(a[x])==-1){
+//     b.push(a[x]);
+//     for (let i=x+1;i<a.length;i++)
+//     {
+//       if(a[x]==a[i])
+//       {
+//       count++;
+//     }
+//     }
+//     console.log(`${a[x]} occurs ${count} times`)
+// }
+// }
+
+
+// ................................................................
+    </script>
+
+
+</body>
+
+</html>

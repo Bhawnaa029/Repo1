@@ -1,0 +1,425 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+.h1 {
+    font-weight: 800;
+    font-size: 80px;
+    color: rgb(81, 79, 79);
+    padding: 2px 2px 30px 0px;
+
+}
+
+.h11 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    color: rgb(81, 79, 79);
+    padding: 45px 2px 35px 40px;
+}
+
+
+.web-container {
+    display: flex;
+    padding-top: 20px;
+    /* justify-content: space-between; */
+    font-size: 20px;
+    width: 100%;
+    /* gap:30px; */
+    position: relative;
+    left:-80%;
+    opacity: 0;
+    animation: animate .7s ease-out  1 forwards;
+}
+
+@keyframes animate {
+    to{
+        left:0%;
+       opacity: 1;
+    }
+    
+}
+
+.image-holder {
+    width: 50%;
+    order: 1;
+    clip-path:  polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0); ;
+     background-color: black;
+}
+
+
+.image-holder img {
+    width: 80%;
+    /* height: 70%; */
+    /* border-radius: 50%; */
+    /* border: 7px solid orange; */
+    padding-top: 30px;
+}
+
+.web-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding: 2px 2px 2px 40px;
+}
+
+.images {
+    width: 60%;
+}
+
+
+
+.ulistt {
+    display: flex;
+    list-style: none;
+    padding: 35px 7px 40px 30px;
+}
+
+.web-container2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+
+.divbox {
+    /* border: 2px solid black; */
+    padding: 22px 40px 20px 40px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 2px orangered;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+  
+}
+
+.divbox:hover {
+    /* background: linear-gradient(to top right, #FF512F 10%, #F09819 61%); */
+    background-color: orangered;
+    /* box-shadow: none; */
+    color: white;
+}
+
+.web-container3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    
+
+}
+
+.web-container3 h2 {
+    line-height: 2;
+    font-weight: 900;
+    font-size: 29px;
+}
+
+.web-container3 p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #374151;
+    font-family: sans-serif;
+
+}
+
+.web-container3 img {
+    width:40%;
+}
+
+.web-container3 div:nth-child(1) img{
+    width: 44%;
+    padding-top: 19px;
+}
+
+.web-container3 div {
+  
+    border-radius: 10px;
+    padding: 0px 30px 30px 30px;
+    background-color: white;
+    transition: all .3s ease;
+    width: 22%;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 11px -3px #15141482, inset 8px 11px 7px -10px #d6cdcd;
+}
+
+
+
+.web-container3 div:hover{
+    transform: translateY(-20px) ;
+    
+}
+
+.icons {
+    width: 100%;
+    padding: 30px 0px 0px 30px;
+}
+
+
+.container2{
+    background-color: antiquewhite;
+    margin-top: 50px;
+}
+
+
+        
+        footer {
+            background: url(images/image1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 2.5rem 1rem;
+        }
+
+        footer section .display-div {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+
+        }
+
+        footer .logo-div {
+            display: flex;
+            align-items: center;
+            width: 34vw;
+            gap: 10px;
+        }
+
+
+
+        footer .logo-div p {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        footer .input-div {
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+            width: 34vw;
+            position: relative;
+        }
+
+        footer section input[type="text"] {
+            width: auto;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            left: 0px;
+            font-size: 17px;
+            height: 3.3rem;
+            padding: 0px 10px;
+
+        }
+
+        footer .footer-button {
+            position: absolute;
+            top: 4px;
+            right: 5px;
+            font-size: 17px;
+            color: white;
+            background-color: #FF3C00;
+            border: none;
+            height: 44px;
+            width: 10vw;
+        }
+
+        footer section {
+            display: flex;
+            justify-content: center;
+            padding: 0rem 1rem;
+        }
+
+        footer section div img {
+            width: 3.3rem;
+            height: auto;
+            color: #FF3C00;
+        }
+
+        footer hr {
+            border: 1px solid;
+            margin: 2.5rem auto;
+            width: 80%;
+
+        }
+
+        footer main {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer .footer-middle {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        footer .footer_box {
+            max-width: 19rem;
+            line-height: 25px;
+
+        }
+
+        footer .footer_box h2 {
+            margin: 1rem 0rem 2rem;
+        }
+
+        footer .footer_box:nth-child(even) h2 {
+            position: relative;
+            right: 23px;
+        }
+
+        footer .footer_box p {
+            font-size: 17px;
+            margin-bottom: 1.4rem;
+            color: rgba(255, 255, 255, 0.80);
+
+        }
+
+        footer .footer_box li {
+            list-style: none;
+            color: rgba(255, 255, 255, 0.80);
+
+            position: relative;
+            margin-bottom: 18px;
+            font-size: 20px;
+            transition: color 0.5s ease;
+        }
+
+        footer .footer_box li:hover {
+            color: #FF3C00;
+        }
+        footer .footer_box li:hover::before{
+            background: #FF3C00;
+        }
+        
+        footer .footer_box li::before {
+            transition: 0.5s ease;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -23px;
+            width: 10px;
+            height: 1px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.80);
+
+        }
+
+        footer main .display-div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        /* RESPONSIVE */
+
+
+        @media only screen and (max-width: 1180px) {
+            footer .logo-div p {
+                font-size: 22px;
+            }
+
+
+            footer .footer_box {
+                max-width: 12rem;
+            }
+
+            footer .footer_box li {
+                font-size: 17px;
+            }
+
+            footer .footer_box p {
+                font-size: 16px;
+            }
+
+            footer .footer_box h2 {
+                font-size: 20px;
+            }
+
+        }
+
+        @media only screen and (max-width: 934px) {
+            footer .footer-middle {
+                display: block;
+            }
+
+            footer .logo-div p {
+                font-size: 20px;
+            }
+
+            footer section input[type="text"],
+            footer .footer-button {
+                font-size: 16px;
+            }
+
+            footer .footer_box {
+                max-width: 14rem;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            footer section .display-div {
+                display: block;
+                margin-bottom: 2rem;
+            }
+
+            footer .logo-div {
+                display: grid;
+                place-items: center;
+                margin-bottom: 1rem;
+            }
+
+            footer .input-div,
+            footer .logo-div {
+                width: 65vw;
+            }
+
+            footer .footer-button {
+                width: 18vw;
+            }
+
+        }
+
+        @media only screen and (max-width: 470px) {
+            footer main .display-div {
+                display: block;
+            }
+
+            footer .logo-div {
+                width: 71vw;
+                text-align: center;
+            }
+
+            footer .footer-button {
+                width: 20vw;
+            }
+
+            footer .footer_box:nth-child(odd) h2 {
+                position: relative;
+                right: 23px;
+            }
+
+            footer .footer_box h2 {
+                font-size: 22px;
+            }
+
+            footer .input-div {
+                margin: 1rem auto 0rem;
+            }
+            footer section input[type="text"],
+            footer .footer-button {
+                font-size: 15px;
+            }
+        }

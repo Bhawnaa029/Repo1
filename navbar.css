@@ -1,0 +1,213 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 180px;
+    position: relative;
+    transition: all ease 0.3s;
+    background-color: white;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(https://envato-shoebox-0.imgix.net/1936/b1cf-69fd-4778-8ad5-26651f7a747c/DSC_0000+13.jpg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=1000&fit=max&markalign=center%2Cmiddle&markalpha=18&s=86a097eaae3b80f0da954e5baa0d91c9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+  }
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .logo-container span{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #e34f10;
+    position: relative;
+    left: -70px;
+  }
+  
+  #logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ff3c00;
+    width: 180px;
+    height: 80px;
+    transform: translateX(-30px);
+  }
+  
+  /* #navlist li a{
+      -webkit-text-stroke: 2px #FF3C00;
+  } */
+  #navbar li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-bottom: 5px dotted #ff3c00;
+    transition: all 0.4s ease;
+  }
+  
+  #navbar li:hover:after {
+    width: 100%;
+  }
+  #navbar li:nth-child(2):after {
+    width: 0;
+  }
+  #dropdown li:hover:after {
+    width: 90%;
+  }
+  
+  #navlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    transform: translateX(-50px) translateY(8px);
+   
+  }
+  #navlist li a{
+    color: white;
+  }
+  
+  #navicons {
+    cursor: pointer;
+    display: none;
+  }
+
+ 
+  
+  #navcompo2 {
+    position: relative;
+    top: 3px;
+    padding-bottom: 10px;
+    order:2
+    
+  }
+  
+  #dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    background-color: #ffffff96;
+    backdrop-filter: blur(10px);
+    width: max-content;
+    height: 0;
+    transition: top 0.4s ease;
+    z-index: 9;
+    left: -8%;
+    top: 60px;
+    overflow: hidden;
+  }
+  
+
+  #dropdown li a {
+    color: #fff;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  
+  #dropicon {
+    position: relative;
+    top: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  #navcompo2:hover #dropdown {
+    padding: 5px 5px;
+    height: auto;
+    top: 40px;
+  }
+  #navcompo2:hover #dropicon {
+    transform: rotate(180deg);
+  
+
+  }
+  /* #navcompo2:hover .navtext{
+    display: none;
+  } */
+  #navcompo2:hover #dropdown li a {
+    left: 0%;
+  }
+  
+  .navbutton {
+    background: #ff4d00e1;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    animation: round 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1  forwards;
+    color: #fff;
+  }
+  
+  @keyframes round {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .navbutton::before {
+    content: " ";
+    position: absolute;
+    top: -60px;
+    left: -100%;
+    width: 60px;
+    height: 400%;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    background: #e38410;
+    box-shadow: 10px 10px 10px 10px #e34f10, inset 10px 10px 10px 10px #e34f10;
+    z-index: -1;
+    transition: all 0.8s ease;
+  }
+  .navbutton:hover:before {
+    left: 100%;
+  }
+
+
+  .navtext{
+    position: absolute;
+    transform: translateX(44vw) translateY(100px);
+    font-family: sans-serif;
+    opacity: 1;
+    
+  }
+  #navcompo2:hover .navtext{
+    opacity: 0;
+  }
+  .navtext h1{
+    color: #fff;
+  }
+  .navtext p{
+    color: #fff;
+    transform: translate(-8px);
+    margin-top: 15px;
+  }
+  .navtext a{
+    color: #fff;
+  }

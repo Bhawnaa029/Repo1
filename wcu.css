@@ -1,0 +1,576 @@
+
+.wcu {
+    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+    /* background-color: black; */
+}
+
+.wcu h1 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.wcu .main {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 2rem;
+
+}
+
+.wcu .main .part2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wcu .parent-of-1and2 {
+    display: flex;
+}
+
+
+
+
+/* PART 1  */
+
+
+
+
+
+.wcu .part1 .container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+.wcu .part1 .container .textpart {
+    max-width: 300px;
+    padding: 40px 40px 30px 15px;
+    height: auto;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    text-align: right;
+    border-left: 3px solid #FF3C00;
+    border-radius: 10px;
+    /* background-color: white; */
+
+}
+
+.wcu .part1 .container1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.wcu .part1 .container1 .textpart {
+    max-width: 300px;
+    padding: 40px 40px 30px 15px;
+    height: auto;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    text-align: right;
+    border-left: 3px solid #FF3C00;
+    border-radius: 10px;
+    /* background-color: white; */
+
+}
+
+.wcu .title {
+    font-weight: 500;
+    font-size: 21px;
+    color: #232323;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.wcu .text {
+    color: #6C6D6C;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.wcu .part1 .iconbox {
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.wcu .part1 .iconbox img:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 42px;
+    right: -38px;
+}
+
+.wcu .part1 .iconbox img:first-child {
+    position: absolute;
+    top: 0px;
+    right: -78px;
+
+}
+
+.wcu .part1 .container {
+    position: relative;
+    left: 5rem;
+}
+
+.wcu .part1 .container1 {
+    position: relative;
+}
+
+.wcu .part1 .container .textpart::before {
+    content: '';
+    background-color: #ff4e19;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform ease 0.5s;
+    border-radius: 10px;
+
+}
+
+.wcu .part1 .container .textpart:hover::before {
+    transform: scaleX(1);
+
+}
+.wcu .part1 .container .textpart:hover{
+    background-color: transparent;
+}
+
+.wcu .part1 .container1 .textpart:hover{
+    background-color: transparent;
+}
+
+
+.wcu .part1 .container1 .textpart::before {
+    content: '';
+    background-color: #ff4e19;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform ease 0.5s;
+    border-radius: 10px;
+
+}
+
+.wcu .part1 .container1 .textpart:hover::before {
+    transform: scaleX(1);
+
+}
+
+.wcu .part1 .container .textpart:hover .title {
+    color: white;
+}
+
+.wcu .part1 .container .textpart:hover .text {
+    color: white;
+
+}
+
+.wcu .part1 .container1 .textpart:hover .title {
+    color: white;
+    transition: 0.5s;
+}
+
+.wcu .part1 .container1 .textpart:hover .text {
+    color: white;
+    transition: 0.5s;
+
+}
+
+
+
+
+/* PART 3 */
+
+
+
+
+.wcu .part3 .container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.wcu .part3 .container .textpart {
+    max-width: 300px;
+    padding: 40px 15px 30px 40px;
+    height: auto;
+    /* background-color: white; */
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    border-right: 3px solid #FF3C00;
+    border-radius: 10px;
+}
+
+.wcu .part3 .container1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.wcu .part3 .container1 .textpart {
+    max-width: 300px;
+    padding: 40px 15px 30px 40px;
+    height: auto;
+    /* background-color: white; */
+
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    border-right: 3px solid #FF3C00;
+    border-radius: 10px;
+}
+.wcu .part3 .container .textpart:hover{
+    background-color: transparent;
+}
+.wcu .part3 .container1  .textpart:hover{
+    background-color: transparent;
+}
+
+
+
+
+.wcu .part3 .container {
+    position: relative;
+    right: 5rem;
+}
+
+.wcu .part3 .container1 {
+    position: relative;
+}
+
+.wcu .part3 .container {
+    position: relative;
+}
+
+.wcu .part3 .container .textpart::before {
+    content: '';
+    background-color: #ff4e19;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform ease 0.5s;
+    border-radius: 10px;
+
+}
+
+.wcu .part3 .container .textpart:hover::before {
+    transform: scaleX(1);
+
+}
+
+.wcu .part3 .container .textpart:hover .title {
+    color: white;
+    transition: 0.5s;
+}
+
+.wcu .part3 .container .textpart:hover .text {
+    color: white;
+    transition: 0.5s;
+
+}
+
+.wcu .part3 .container1 .textpart:hover .title {
+    color: white;
+    transition: 0.5s;
+}
+
+.wcu .part3 .container1 .textpart:hover .text {
+    color: white;
+    transition: 0.5s;
+
+}
+
+
+
+.wcu .part3 .container1 .textpart::before {
+    content: '';
+    background-color: #ff4e19;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+    z-index: -2;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform ease 0.5s;
+}
+
+.wcu .part3 .container1 .textpart:hover::before {
+    transform: scaleX(1);
+
+}
+
+
+
+
+.wcu .part3 .iconbox img:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    transform: rotate(270deg);
+
+    position: absolute;
+    top: 42px;
+    left: -38px;
+}
+
+.wcu .part3 .iconbox img:first-child {
+    position: absolute;
+    top: 0px;
+    left: -78px;
+
+}
+
+.wcu .part3 .iconbox {
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1150px) {
+
+
+
+
+
+
+
+
+    .wcu .part1 .iconbox img:nth-child(2) {
+
+        position: absolute;
+        top: 31px;
+        right: -38px;
+    }
+
+    .wcu .part1 .iconbox img:first-child {
+        position: absolute;
+        top: -12px;
+        right: -78px;
+
+    }
+
+    .wcu .part3 .iconbox img:nth-child(2) {
+
+        position: absolute;
+        top: 31px;
+        left: -38px;
+    }
+
+    .wcu .part3 .iconbox img:first-child {
+        position: absolute;
+        top: -12px;
+        left: -78px;
+
+    }
+
+
+
+
+    .wcu .part1 .container .textpart {
+        padding: 25px 23px 25px 0px;
+    }
+
+    .wcu .part3 .container .textpart {
+        padding: 25px 0px 25px 23px;
+    }
+
+    .wcu .part1 .container1 .textpart {
+        padding: 25px 23px 25px 0px;
+    }
+
+    .wcu .part3 .container1 .textpart {
+        padding: 25px 0px 25px 23px;
+    }
+
+    .wcu .part1 .container1 {
+        margin-bottom: 2rem;
+    }
+
+    .wcu .part3 .container1 {
+        margin-bottom: 2rem;
+    }
+
+    .wcu .part1 .container {
+        margin-bottom: 2rem;
+    }
+
+    .wcu .part3 .container {
+        margin-bottom: 2rem;
+    }
+
+    .wcu .text {
+        font-size: 14px;
+    }
+
+    .wcu .title {
+        font-size: 19px;
+    }
+
+    .wcu .part1 .container {
+        position: relative;
+        left: 3.5rem;
+    }
+
+    .wcu .part3 .container {
+        position: relative;
+        right: 3.5rem;
+    }
+
+
+}
+
+
+
+/* FOR 990PX */
+
+@media only screen and (max-width: 990px) {
+
+    .wcu .main .part2 img {
+        max-width: 90%;
+    }
+
+    .wcu .main {
+        flex-wrap: wrap;
+    }
+
+    .wcu .part1 .container .textpart {
+        padding: 20px 23px 25px 0px;
+    }
+
+    .wcu .part1 .container1 .textpart {
+        padding: 20px 23px 25px 0px;
+    }
+
+
+    .wcu .part1 .container1 {
+        margin-bottom: 3rem;
+    }
+
+    .wcu .part1 .container {
+        margin-bottom: 3rem;
+    }
+
+    .wcu .part3 {
+        margin: 0rem auto;
+        display: none;
+    }
+}
+
+/* FOR 800PX */
+@media only screen and (max-width: 800px) {
+
+    .wcu .text {
+        font-size: 13px;
+    }
+
+    .wcu .title {
+        font-size: 18px;
+    }
+
+    .wcu .main .part2 img {
+        max-width: 95%;
+    }
+
+
+}
+
+/* FOR 700PX */
+
+
+
+@media only screen and (max-width: 700px) {
+    .wcu .part1 .container1 {
+        margin-bottom: 2rem;
+    }
+
+    .wcu .part1 .container {
+        margin-bottom: 2rem;
+    }
+}
+
+/*  FOR 600PX */
+
+
+
+
+@media only screen and (max-width: 660px) {
+    .wcu .part1 .container1 {
+        margin-bottom: 2.3rem;
+    }
+
+    .wcu .part1 .container {
+        margin-bottom: 2.3rem;
+    }
+
+    .wcu .part1 .container {
+        left: 0px;
+    }
+
+    .wcu .part3 .container {
+        right: 0px;
+    }
+
+    .wcu .part2 {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wcu .parent-of-1and2 {
+        flex-wrap: wrap;
+    }
+
+    .wcu .main .part2 img {
+        max-width: 80%;
+        margin: 0rem 2rem 2rem;
+
+    }
+
+    .wcu .part1 {
+        margin: 0rem auto;
+    }
+
+    .wcu .part3 {
+        margin: 0rem auto;
+        display: block;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    .wcu h1 {
+        font-size: 35px;
+    }
+
+    .wcu .part3 {
+        position: relative;
+        left: 2rem;
+    }
+}

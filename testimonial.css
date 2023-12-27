@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.testimonial-heading{
+    background: #000;
+    height: 120px;
+    padding: 20px;
+}
+.testimonial-heading h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 550;
+    color: #fff;
+    text-align: center;
+    font-family:sans-serif ;
+    margin-bottom: 10px;
+}
+
+
+#testimonial {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    padding-inline: 20px;
+    gap: 46px;
+    /* background: url(https://img.freepik.com/premium-photo/technology-network-background_34629-304.jpg?w=826); */
+    background: #000;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 30px;
+}
+
+.reviews {
+    min-width: 21.5%;
+    max-width: 21.5%;
+    height: 90%;
+    /* border: 2px solid #ff6600; */
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pic {
+    width: 100%;
+    height: 80%;
+    border: 10px solid orangered  ;
+    /* border-bottom: 2px solid red; */
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+    position: relative;
+    transition: all ease .5s;
+    border-right: none;
+    border-radius: 50%;
+}
+.pic img{
+    min-height: 60%;
+}
+.reviews:hover .pic{
+    border-radius: 20px 20px 0 0;
+    border-bottom: 0px solid orangered ;
+    height: 60%;
+}
+.pic::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    /* display: block; */
+    top: -100%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all ease .5s;
+}
+.reviews:hover .pic::before{
+    top: 0;
+}
+
+.pic img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.msg {
+    /* max-width: 280px; */
+    height: 40%;
+    border-radius: 0 0 20px 20px;
+    border-top:none;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 550;
+    line-height: 30px;
+    padding-inline: 10px;
+    padding-top: 12px;
+    transform: translateY(110%);
+    transition: all ease .5s;
+    background:linear-gradient(to top right, #cd8b4a, #ff3c00);;
+    color: #fff;
+    border-left: 10px solid orangered;
+    border-bottom: 10px solid orangered;
+    position: relative;
+}
+/* .msg::before{
+    content: "Take a LOOK What They Write About Us.. ";
+    position: absolute;
+    padding-inline: 20px ;
+    padding-top: 50px;
+    top: -115%;
+    left: -10%;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    transition: top ease .5s;
+} */
+.reviews:hover .msg::before{
+    top: 100%;
+    opacity: 0;
+}
+.reviews:hover .msg{
+    transform: translateY(0);
+}

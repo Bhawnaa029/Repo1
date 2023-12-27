@@ -1,0 +1,55 @@
+
+.accordianContainer{
+    margin-inline: auto;
+}
+
+       .accordianh1{
+        text-align: center;
+        color: black;
+        margin-bottom: 10px;
+       }
+
+        .slcb {
+            background-color:black;
+            width: 900px;
+            height: 80px;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+            border: none;
+            padding: 3px 10px 10px 20px;
+            margin-bottom: 2px;
+            position: relative;
+            transform: translateX(100px);
+        
+        }
+
+        .content {
+            background-color: #2D2D2D;
+            width: 900px;
+            padding: 10px 10px;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 20px;
+            transform: translateX(100px);
+            display: none;
+        }
+
+        .slcb:focus+.content {
+            display: block;
+        }
+
+        .slcb::after {
+            content: "+";
+            position: absolute;
+            right: 30px;
+            bottom: 5px;
+            font-size: 40px;
+        }
+        .slc:first-child{
+            padding:0px 0px 70px 240px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+ 
